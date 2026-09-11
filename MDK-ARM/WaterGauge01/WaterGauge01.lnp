@@ -1,0 +1,28 @@
+--cpu Cortex-M0+
+"watergauge01\startup_stm32l031xx.o"
+"watergauge01\main.o"
+"watergauge01\stm32l0xx_it.o"
+"watergauge01\stm32l0xx_hal_msp.o"
+"watergauge01\stm32l0xx_hal_tim.o"
+"watergauge01\stm32l0xx_hal_tim_ex.o"
+"watergauge01\stm32l0xx_hal.o"
+"watergauge01\stm32l0xx_hal_i2c.o"
+"watergauge01\stm32l0xx_hal_i2c_ex.o"
+"watergauge01\stm32l0xx_hal_rcc.o"
+"watergauge01\stm32l0xx_hal_rcc_ex.o"
+"watergauge01\stm32l0xx_hal_flash_ramfunc.o"
+"watergauge01\stm32l0xx_hal_flash.o"
+"watergauge01\stm32l0xx_hal_flash_ex.o"
+"watergauge01\stm32l0xx_hal_gpio.o"
+"watergauge01\stm32l0xx_hal_dma.o"
+"watergauge01\stm32l0xx_hal_pwr.o"
+"watergauge01\stm32l0xx_hal_pwr_ex.o"
+"watergauge01\stm32l0xx_hal_cortex.o"
+"watergauge01\stm32l0xx_hal_exti.o"
+"watergauge01\stm32l0xx_hal_uart.o"
+"watergauge01\stm32l0xx_hal_uart_ex.o"
+"watergauge01\system_stm32l0xx.o"
+--strict --scatter "WaterGauge01\WaterGauge01.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "WaterGauge01.map" -o WaterGauge01\WaterGauge01.axf
